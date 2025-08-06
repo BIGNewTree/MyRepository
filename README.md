@@ -77,9 +77,9 @@ ThreadPool& operator=(ThreadPool&&) = delete;
 - 确保线程池对象的唯一所有权
 
 ## 性能考虑
-​- `​任务队列​​`：使用std::queue和互斥锁实现线程安全队列
-​- `​线程管理`​​：工作线程在空闲时阻塞，避免CPU空转
-​- `​资源获取`​​：使用RAII管理锁资源，避免死锁
+- `任务队列​​`：使用std::queue和互斥锁实现线程安全队列
+- `线程管理`：工作线程在空闲时阻塞，避免CPU空转
+- `资源获取`​​：使用RAII管理锁资源，避免死锁
 
 ## 贡献指南
 - 欢迎提交Pull Request。对于重大更改，请先开Issue讨论。
@@ -87,4 +87,5 @@ ThreadPool& operator=(ThreadPool&&) = delete;
 ## 许可证
 
 MIT License
+
 
