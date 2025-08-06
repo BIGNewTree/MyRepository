@@ -11,11 +11,24 @@
 - 提供方便的线程池关闭机制
 
 ## 安装
+### 1.项目结构建议​​
+```
+ThreadPool/
+├── CMakeLists.txt
+├── ThreadPool.h
+├── ThreadPool.cpp
+└── demo.cpp (示例程序，可选)
+```
+### 2. 构建命令
 ```bash
 cd ThreadPool
 mkdir build && cd build
-cmake ..
+cmake .. -DCMAKE_BUILD_TYPE=Release
 make
+```
+### 3. 安装选项
+```bash
+cmake --install . --prefix=/usr/local  # Linux/macOS
 ```
 
 ## 关键技术解析：
@@ -69,7 +82,8 @@ ThreadPool& operator=(ThreadPool&&) = delete;
 ​- `​资源获取`​​：使用RAII管理锁资源，避免死锁
 
 ## 贡献指南
-欢迎提交Pull Request。对于重大更改，请先开Issue讨论。
+- 欢迎提交Pull Request。对于重大更改，请先开Issue讨论。
 
 ## 许可证
+
 MIT License
