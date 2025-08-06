@@ -1,7 +1,0 @@
-﻿  Manager.cpp
-  main_test.cpp
-  正在生成代码...
-E:\CODE_C\C_Single\VS_Test_Emp\Employee\Employee\Manager.cpp(144): warning C4715: “Manager::Same_work”: 不是所有的控件路径都返回值
-  Employee.vcxproj -> E:\CODE_C\C_Single\VS_Test_Emp\Employee\x64\Debug\Employee.exe
-  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
-  或批处理文件。
